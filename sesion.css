@@ -1,0 +1,279 @@
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+
+/* ==========================================
+   CONTENEDOR PRINCIPAL
+========================================== */
+
+.contenedor-login {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+
+/* ==========================================
+   TARJETA DE LOGIN
+========================================== */
+
+.tarjeta-login {
+    width: 100%;
+    max-width: 480px;
+    background: white;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==========================================
+   ENCABEZADO
+========================================== */
+
+.encabezado {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icono {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0ecff;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.encabezado h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #1e3a8a;
+}
+
+.encabezado p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+/* ==========================================
+   SELECCIÓN DE ROLES
+========================================== */
+
+.seccion-roles {
+    margin-bottom: 25px;
+}
+
+.seccion-roles h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #334155;
+}
+
+
+/* ==========================================
+   BOTONES DE ROLES
+========================================== */
+
+.roles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.boton-rol {
+    min-height: 85px;
+    padding: 10px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    background: white;
+    color: #475569;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.boton-rol:hover {
+    border-color: #3b82f6;
+    background: #f8fbff;
+}
+
+.boton-rol.activo {
+    border-color: #2563eb;
+    background: #eff6ff;
+    color: #1d4ed8;
+    font-weight: bold;
+}
+
+.boton-rol span {
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   FORMULARIO
+========================================== */
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* ==========================================
+   CAMPOS
+========================================== */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #334155;
+}
+
+.campo input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    background: white;
+    transition: 0.2s;
+}
+
+.campo input:focus {
+    border-color: #2563eb;
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.campo input::placeholder {
+    color: #94a3b8;
+}
+
+
+/* ==========================================
+   BOTÓN INICIAR SESIÓN
+========================================== */
+
+.boton-iniciar {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.boton-iniciar:hover {
+    background: #1d4ed8;
+}
+
+.boton-iniciar:active {
+    transform: scale(0.99);
+}
+
+
+/* ==========================================
+   INFORMACIÓN
+========================================== */
+
+.informacion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.informacion span {
+    font-size: 18px;
+}
+
+.informacion p {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #64748b;
+}
+
+
+/* ==========================================
+   PIE DE PÁGINA
+========================================== */
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 500px) {
+    .tarjeta-login {
+        padding: 25px 20px;
+        border-radius: 14px;
+    }
+
+    .encabezado h1 {
+        font-size: 24px;
+    }
+
+    .roles {
+        grid-template-columns: 1fr;
+    }
+
+    .boton-rol {
+        min-height: 55px;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 12px 18px;
+    }
+
+}

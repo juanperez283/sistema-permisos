@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Panel del Administrador</title>
+
+    <link
+        rel="stylesheet"
+        href="administrador.css">
+
+</head>
+
+<body>
+
+
+    <!-- BARRA SUPERIOR -->
+
+    <header class="barra-superior">
+
+        <div class="logo">
+
+            <div class="logo-icono">
+                📋
+            </div>
+
+            <div class="logo-texto">
+
+                <h1>
+                    Sistema de Permisos
+                </h1>
+
+                <p>
+                    Panel del administrador
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="usuario">
+
+            <div class="usuario-datos">
+
+                <strong id="nombreUsuario">
+                    Administrador
+                </strong>
+
+                <span>
+                    Administrador
+                </span>
+
+            </div>
+
+            <div class="usuario-icono">
+                👨‍💼
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="contenido">
+
+
+        <!-- BIENVENIDA -->
+
+        <section class="bienvenida">
+
+            <h2>
+                Bienvenido
+            </h2>
+
+            <p>
+                ¿Qué deseas hacer?
+            </p>
+
+        </section>
+
+
+        <!-- OPCIONES -->
+
+        <section class="opciones">
+
+
+            <!-- LISTA DE PERMISOS -->
+
+            <button
+                type="button"
+                class="tarjeta-opcion"
+                id="btnListaPermisos">
+
+                <div class="icono-opcion">
+                    📋
+                </div>
+
+                <div class="texto-opcion">
+
+                    <h3>
+                        Lista de permisos
+                    </h3>
+
+                    <p>
+                        Consulta todos los permisos
+                        registrados en el sistema.
+                    </p>
+
+                </div>
+
+                <span class="flecha">
+                    →
+                </span>
+
+            </button>
+
+
+            <!-- GESTIÓN DE PERMISOS -->
+
+            <button
+                type="button"
+                class="tarjeta-opcion"
+                id="btnGestionPermisos">
+
+                <div class="icono-opcion">
+                    ⚙️
+                </div>
+
+                <div class="texto-opcion">
+
+                    <h3>
+                        Gestión de permisos
+                    </h3>
+
+                    <p>
+                        Revisa y gestiona las
+                        solicitudes de permisos.
+                    </p>
+
+                </div>
+
+                <span class="flecha">
+                    →
+                </span>
+
+            </button>
+
+
+            <!-- GENERAL -->
+
+
+        </section>
+
+
+        <!-- CERRAR SESIÓN -->
+
+        <button
+            type="button"
+            class="boton-cerrar"
+            id="btnCerrarSesion">
+
+            🚪 Cerrar sesión
+
+        </button>
+
+
+    </main>
+
+
+    <!-- PIE -->
+
+    <footer>
+
+        Sistema de Permisos Virtuales
+
+    </footer>
+
+
+    <script src="administrador.js"></script>
+
+</body>
+
+</html>

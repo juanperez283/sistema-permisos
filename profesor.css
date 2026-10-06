@@ -1,0 +1,428 @@
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f1f5f9;
+
+    color: #1e293b;
+}
+
+
+/* ==========================================
+   BARRA SUPERIOR
+========================================== */
+
+.barra-superior {
+
+    width: 100%;
+
+    min-height: 75px;
+
+    padding: 15px 40px;
+
+    background: white;
+
+    border-bottom:
+        1px solid #e2e8f0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.logo-icono {
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eff6ff;
+
+    border-radius: 10px;
+
+    font-size: 22px;
+}
+
+.logo-texto h1 {
+
+    font-size: 19px;
+
+    color: #1e3a8a;
+}
+
+.logo-texto p {
+
+    margin-top: 3px;
+
+    font-size: 12px;
+
+    color: #64748b;
+}
+
+
+/* ==========================================
+   USUARIO
+========================================== */
+
+.usuario {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.usuario-datos {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 3px;
+}
+
+.usuario-datos strong {
+
+    font-size: 14px;
+}
+
+.usuario-datos span {
+
+    font-size: 12px;
+
+    color: #64748b;
+}
+
+.usuario-icono {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e0ecff;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+}
+
+
+/* ==========================================
+   CONTENIDO
+========================================== */
+
+.contenido {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 50px 25px;
+}
+
+
+/* ==========================================
+   BIENVENIDA
+========================================== */
+
+.bienvenida {
+
+    margin-bottom: 30px;
+}
+
+.bienvenida h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+    color: #1e293b;
+}
+
+.bienvenida p {
+
+    font-size: 15px;
+
+    color: #64748b;
+}
+
+
+/* ==========================================
+   OPCIONES
+========================================== */
+
+.opciones {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ==========================================
+   TARJETAS
+========================================== */
+
+.tarjeta-opcion {
+
+    position: relative;
+
+    min-height: 180px;
+
+    padding: 30px;
+
+    border:
+        1px solid #e2e8f0;
+
+    border-radius: 15px;
+
+    background: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0, 0, 0, 0.04);
+
+    transition: 0.2s;
+}
+
+.tarjeta-opcion:hover {
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        #93c5fd;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==========================================
+   ICONO
+========================================== */
+
+.icono-opcion {
+
+    width: 60px;
+
+    height: 60px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eff6ff;
+
+    border-radius: 12px;
+
+    font-size: 28px;
+}
+
+
+/* ==========================================
+   TEXTO
+========================================== */
+
+.texto-opcion h3 {
+
+    margin-bottom: 8px;
+
+    font-size: 18px;
+
+    color: #1e293b;
+}
+
+.texto-opcion p {
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #64748b;
+}
+
+
+/* ==========================================
+   FLECHA
+========================================== */
+
+.flecha {
+
+    position: absolute;
+
+    right: 22px;
+
+    bottom: 22px;
+
+    font-size: 22px;
+
+    color: #94a3b8;
+
+    transition: 0.2s;
+}
+
+.tarjeta-opcion:hover .flecha {
+
+    right: 17px;
+
+    color: #2563eb;
+}
+
+
+/* ==========================================
+   CERRAR SESIÓN
+========================================== */
+
+.boton-cerrar {
+
+    display: block;
+
+    margin: 35px auto 0;
+
+    padding: 12px 25px;
+
+    border:
+        1px solid #fecaca;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #dc2626;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.boton-cerrar:hover {
+
+    background: #fef2f2;
+
+    border-color:
+        #fca5a5;
+}
+
+
+/* ==========================================
+   PIE
+========================================== */
+
+footer {
+
+    padding: 20px;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    color: #94a3b8;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .barra-superior {
+
+        padding: 15px 20px;
+    }
+
+    .logo-texto h1 {
+
+        font-size: 16px;
+    }
+
+    .usuario-datos {
+
+        display: none;
+    }
+
+    .contenido {
+
+        padding: 35px 20px;
+    }
+
+    .bienvenida h2 {
+
+        font-size: 25px;
+    }
+
+    .opciones {
+
+        grid-template-columns: 1fr;
+    }
+
+}

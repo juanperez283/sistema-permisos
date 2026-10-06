@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Panel del Profesor</title>
+
+    <link rel="stylesheet" href="profesor.css">
+
+</head>
+
+<body>
+
+
+    <!-- BARRA SUPERIOR -->
+
+    <header class="barra-superior">
+
+        <div class="logo">
+
+            <div class="logo-icono">
+                📋
+            </div>
+
+            <div class="logo-texto">
+
+                <h1>
+                    Sistema de Permisos
+                </h1>
+
+                <p>
+                    Panel del profesor
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="usuario">
+
+            <div class="usuario-datos">
+
+                <strong id="nombreUsuario">
+                    Profesor
+                </strong>
+
+                <span>
+                    Profesor
+                </span>
+
+            </div>
+
+            <div class="usuario-icono">
+                👨‍🏫
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="contenido">
+
+
+        <!-- BIENVENIDA -->
+
+        <section class="bienvenida">
+
+            <h2>
+                Bienvenido
+            </h2>
+
+            <p>
+                ¿Qué deseas hacer?
+            </p>
+
+        </section>
+
+
+        <!-- OPCIONES -->
+
+        <section class="opciones">
+
+
+            <!-- LISTA DE PERMISOS -->
+
+            <button
+                type="button"
+                class="tarjeta-opcion"
+                id="btnListaPermisos">
+
+                <div class="icono-opcion">
+                    📋
+                </div>
+
+                <div class="texto-opcion">
+
+                    <h3>
+                        Lista de permisos
+                    </h3>
+
+                    <p>
+                        Consulta los permisos
+                        aceptados de tus cursos.
+                    </p>
+
+                </div>
+
+                <span class="flecha">
+                    →
+                </span>
+
+            </button>
+
+
+        </section>
+
+
+        <!-- CERRAR SESIÓN -->
+
+        <button
+            type="button"
+            class="boton-cerrar"
+            id="btnCerrarSesion">
+
+            🚪 Cerrar sesión
+
+        </button>
+
+
+    </main>
+
+
+    <!-- PIE -->
+
+    <footer>
+
+        Sistema de Permisos Virtuales
+
+    </footer>
+
+
+    <script src="profesor.js"></script>
+
+</body>
+
+</html>

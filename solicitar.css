@@ -1,0 +1,394 @@
+/* ==========================================
+   GENERAL
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f1f5f9;
+
+    color: #1e293b;
+}
+
+
+/* ==========================================
+   BARRA SUPERIOR
+========================================== */
+
+.barra-superior {
+
+    min-height: 75px;
+
+    padding: 15px 40px;
+
+    background: white;
+
+    border-bottom:
+        1px solid #e2e8f0;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.logo-icono {
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eff6ff;
+
+    border-radius: 10px;
+
+    font-size: 22px;
+}
+
+.logo-texto h1 {
+
+    font-size: 19px;
+
+    color: #1e3a8a;
+}
+
+.logo-texto p {
+
+    margin-top: 3px;
+
+    font-size: 12px;
+
+    color: #64748b;
+}
+
+
+/* ==========================================
+   CONTENEDOR
+========================================== */
+
+.contenedor {
+
+    width: 100%;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    padding: 45px 25px;
+}
+
+
+/* ==========================================
+   ENCABEZADO
+========================================== */
+
+.encabezado {
+
+    margin-bottom: 30px;
+}
+
+.encabezado h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+.encabezado p {
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   FORMULARIO
+========================================== */
+
+form {
+
+    padding: 30px;
+
+    background: white;
+
+    border:
+        1px solid #e2e8f0;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 3px 12px
+        rgba(0, 0, 0, 0.04);
+}
+
+.campo {
+
+    margin-bottom: 23px;
+}
+
+.fila {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 18px;
+}
+
+label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+label span {
+
+    color: #dc2626;
+}
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 12px 13px;
+
+    border:
+        1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #1e293b;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 99, 235, 0.1);
+}
+
+input[readonly] {
+
+    background: #f8fafc;
+
+    color: #64748b;
+}
+
+textarea {
+
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+small {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   CONTADOR
+========================================== */
+
+.contador {
+
+    margin-top: 5px;
+
+    text-align: right;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   AVISO
+========================================== */
+
+.aviso {
+
+    margin-top: 10px;
+
+    padding: 13px;
+
+    background: #eff6ff;
+
+    border:
+        1px solid #bfdbfe;
+
+    border-radius: 8px;
+}
+
+.aviso strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #1e40af;
+
+    font-size: 13px;
+}
+
+.aviso p {
+
+    color: #475569;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   BOTONES
+========================================== */
+
+.botones {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.botones button {
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.boton-cancelar {
+
+    border:
+        1px solid #cbd5e1;
+
+    background: white;
+
+    color: #475569;
+}
+
+.boton-cancelar:hover {
+
+    background: #f8fafc;
+}
+
+.boton-enviar {
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+}
+
+.boton-enviar:hover {
+
+    background: #1d4ed8;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .barra-superior {
+
+        padding: 15px 20px;
+    }
+
+    .contenedor {
+
+        padding: 30px 18px;
+    }
+
+    form {
+
+        padding: 22px;
+    }
+
+    .fila {
+
+        grid-template-columns: 1fr;
+    }
+
+    .botones {
+
+        flex-direction: column;
+    }
+
+    .botones button {
+
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Gestión de permisos</title>
+
+    <link
+        rel="stylesheet"
+        href="gestion-permisos.css">
+
+</head>
+
+<body>
+
+
+    <!-- BARRA SUPERIOR -->
+
+    <header class="barra-superior">
+
+        <div class="logo">
+
+            <div class="logo-icono">
+                📋
+            </div>
+
+            <div class="logo-texto">
+
+                <h1>
+                    Sistema de Permisos
+                </h1>
+
+                <p>
+                    Gestión de permisos
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="usuario">
+
+            <div class="usuario-datos">
+
+                <strong id="nombreUsuario">
+                    Administrador
+                </strong>
+
+                <span>
+                    Administrador
+                </span>
+
+            </div>
+
+            <div class="usuario-icono">
+                👨‍💼
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="contenido">
+
+
+        <section class="bienvenida">
+
+            <h2>
+                Gestión de permisos
+            </h2>
+
+            <p>
+                Revisa y gestiona las solicitudes de permisos.
+            </p>
+
+        </section>
+
+
+        <!-- LISTA DE PERMISOS -->
+
+        <section
+            class="lista-permisos"
+            id="listaPermisos">
+        </section>
+
+
+        <!-- SIN PERMISOS -->
+
+        <div
+            id="sinPermisos"
+            class="sin-permisos">
+
+            No hay solicitudes de permisos registradas.
+
+        </div>
+
+
+        <!-- VOLVER -->
+
+        <button
+            type="button"
+            class="boton-volver"
+            id="btnVolver">
+
+            ← Volver
+
+        </button>
+
+
+    </main>
+
+
+    <footer>
+
+        Sistema de Permisos Virtuales
+
+    </footer>
+
+
+    <script src="gestion-permisos.js"></script>
+
+</body>
+
+</html>

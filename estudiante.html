@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Panel del Estudiante</title>
+
+    <link rel="stylesheet" href="estudiante.css">
+
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+
+    <header class="barra-superior">
+
+        <div class="logo">
+
+            <div class="logo-icono">
+                📋
+            </div>
+
+            <div class="logo-texto">
+
+                <h1>
+                    Sistema de Permisos
+                </h1>
+
+                <p>
+                    Panel del estudiante
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="usuario">
+
+            <div class="usuario-datos">
+
+                <strong id="nombreUsuario">
+                    Estudiante
+                </strong>
+
+                <span>
+                    Estudiante
+                </span>
+
+            </div>
+
+            <div class="usuario-icono">
+                👨‍🎓
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="contenido">
+
+        <!-- BIENVENIDA -->
+
+        <section class="bienvenida">
+
+            <h2>
+                Bienvenido
+            </h2>
+
+            <p>
+                ¿Qué deseas hacer?
+            </p>
+
+        </section>
+
+
+        <!-- OPCIONES -->
+
+        <section class="opciones">
+
+
+            <!-- SOLICITAR PERMISO -->
+
+            <button
+                type="button"
+                class="tarjeta-opcion"
+                id="btnSolicitar">
+
+                <div class="icono-opcion">
+                    📝
+                </div>
+
+                <div class="texto-opcion">
+
+                    <h3>
+                        Solicitar permiso
+                    </h3>
+
+                    <p>
+                        Realiza una nueva solicitud
+                        de permiso.
+                    </p>
+
+                </div>
+
+                <span class="flecha">
+                    →
+                </span>
+
+            </button>
+
+
+            <!-- MIS PERMISOS -->
+
+            <button
+                type="button"
+                class="tarjeta-opcion"
+                id="btnMisPermisos">
+
+                <div class="icono-opcion">
+                    📋
+                </div>
+
+                <div class="texto-opcion">
+
+                    <h3>
+                        Mis permisos
+                    </h3>
+
+                    <p>
+                        Consulta el estado de tus
+                        solicitudes.
+                    </p>
+
+                </div>
+
+                <span class="flecha">
+                    →
+                </span>
+
+            </button>
+
+
+        </section>
+
+
+        <!-- CERRAR SESIÓN -->
+
+        <button
+            type="button"
+            class="boton-cerrar"
+            id="btnCerrarSesion">
+
+            🚪 Cerrar sesión
+
+        </button>
+
+    </main>
+
+
+    <!-- PIE -->
+
+    <footer>
+
+        Sistema de Permisos Virtuales
+
+    </footer>
+
+
+    <script src="estudiante.js"></script>
+
+</body>
+
+</html>

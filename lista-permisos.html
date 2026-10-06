@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de permisos</title>
+
+    <link rel="stylesheet" href="lista-permisos.css">
+
+</head>
+
+<body>
+
+
+    <!-- BARRA SUPERIOR -->
+
+    <header class="barra-superior">
+
+        <div class="logo">
+
+            <div class="logo-icono">
+                📋
+            </div>
+
+            <div class="logo-texto">
+
+                <h1>
+                    Sistema de Permisos
+                </h1>
+
+                <p>
+                    Lista de permisos
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="usuario">
+
+            <div class="usuario-datos">
+
+                <strong id="nombreUsuario">
+                    Usuario
+                </strong>
+
+                <span id="textoRol">
+                    Profesor
+                </span>
+
+            </div>
+
+            <div
+                class="usuario-icono"
+                id="iconoUsuario"
+            >
+                👨‍🏫
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="contenido">
+
+
+        <!-- BIENVENIDA -->
+
+        <section class="bienvenida">
+
+            <h2>
+                Lista de permisos
+            </h2>
+
+            <p>
+                Consulta los permisos aceptados.
+            </p>
+
+        </section>
+
+
+        <!-- FILTROS -->
+
+        <section class="filtros">
+
+            <div class="campo">
+
+                <label for="curso">
+                    Curso
+                </label>
+
+                <select id="curso">
+
+                    <option value="">
+                        Todos los cursos
+                    </option>
+
+                    <option value="1ro">
+                        1ro
+                    </option>
+
+                    <option value="2do">
+                        2do
+                    </option>
+
+                    <option value="3ro">
+                        3ro
+                    </option>
+
+                    <option value="4to">
+                        4to
+                    </option>
+
+                    <option value="5to">
+                        5to
+                    </option>
+
+                    <option value="6to">
+                        6to
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="paralelo">
+                    Paralelo
+                </label>
+
+                <select id="paralelo">
+
+                    <option value="">
+                        Todos los paralelos
+                    </option>
+
+                    <option value="A">
+                        A
+                    </option>
+
+                    <option value="B">
+                        B
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- LISTA -->
+
+        <section
+            class="lista-permisos"
+            id="listaPermisos"
+        >
+        </section>
+
+
+        <!-- SIN PERMISOS -->
+
+        <div
+            id="sinPermisos"
+            class="sin-permisos"
+        >
+            No hay permisos aceptados para mostrar.
+        </div>
+
+
+        <!-- VOLVER -->
+
+        <button
+            type="button"
+            class="boton-volver"
+            id="btnVolver"
+        >
+
+            ← Volver
+
+        </button>
+
+
+    </main>
+
+
+    <!-- PIE -->
+
+    <footer>
+
+        Sistema de Permisos Virtuales
+
+    </footer>
+
+
+    <script src="lista-permisos.js"></script>
+
+</body>
+
+</html>
